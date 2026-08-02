@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Catálogo BUSVA Homebrokers</title>
+  <meta name="description" content="Catálogo informativo de oportunidades inmobiliarias y remates bancarios en México.">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="BUSVA Homebrokers, inicio"><span><strong>BUSVA</strong><small>HOMEBROKERS</small></span></a>
+    <nav id="nav"><a href="#propiedades">Catálogo</a><a href="#proceso">Cómo funcionan los remates bancarios</a><a href="#oficinas">Oficinas</a><a class="contact-link" href="https://wa.me/523343340062" target="_blank">Contáctanos</a></nav>
+    <div class="header-actions"><button class="theme-toggle" id="theme" aria-label="Cambiar tema"><span>☀</span><span class="moon">☾</span></button><button class="menu-toggle" id="menu" aria-label="Abrir menú">☰</button></div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio"><div class="hero-glow"></div><div class="hero-inner">
+      <span class="eyebrow">Oportunidades inmobiliarias en México</span>
+      <h1>Invierte en propiedades<br>por debajo de su<br>valor comercial</h1>
+      <p class="hero-copy">Operaciones con recursos propios <b>·</b> No se aceptan créditos <b>·</b> Entrega estimada de 6 a 14 meses</p>
+      <div class="search-box" role="search">
+        <label><span>Ubicación</span><input id="location" placeholder="Estado, ciudad o zona"></label>
+        <label><span>Tipo de propiedad</span><select id="type"><option value="">Cualquier tipo</option></select></label>
+        <label><span>Precio máximo</span><select id="price"><option value="">Cualquier precio</option><option value="1000000">Hasta $1,000,000</option><option value="1500000">Hasta $1,500,000</option><option value="2000000">Hasta $2,000,000</option><option value="3000000">Hasta $3,000,000</option><option value="4000000">Hasta $4,000,000</option><option value="5000000">Hasta $5,000,000</option><option value="6000000">Hasta $6,000,000</option><option value="10000000">Hasta $10,000,000</option></select></label>
+        <div class="search-actions"><button id="search">⌕ <span>Buscar oportunidades</span></button><button class="clear-filters" id="clear">Limpiar filtros</button></div>
+      </div>
+      <div class="trust-row"><div><b>◇</b><span><strong>Asesoría jurídica</strong><small>Acompañamiento legal experto</small></span></div><div><b>▣</b><span><strong>Proceso documentado</strong><small>Información en cada etapa</small></span></div><div><b>○</b><span><strong>Atención personalizada</strong><small>Resolvemos tus dudas</small></span></div></div>
+    </div></section>
+
+    <section class="catalog" id="propiedades"><div class="section-heading"><div><span class="eyebrow">Catálogo nacional</span><h2>Propiedades disponibles</h2></div><p id="result-count"></p></div><div class="property-grid" id="property-grid"></div><button class="load-more" id="load-more">Ver más propiedades</button><div class="empty" id="empty" hidden><h3>No encontramos propiedades con esos filtros.</h3><button id="show-all">Mostrar todas</button></div></section>
+
+    <section class="process" id="proceso"><div class="process-copy"><span class="eyebrow">Conoce el proceso</span><h2>Información clara antes de invertir</h2><p>En un remate bancario la adquisición se realiza con recursos propios. La propiedad puede conocerse únicamente por el exterior y el tiempo estimado de entrega es de 6 a 14 meses.</p><a href="https://wa.me/523343340062?text=Hola,%20deseo%20agendar%20una%20cita%20informativa%20sobre%20remates%20bancarios." target="_blank">Agendar cita informativa</a></div><div class="video-placeholder"><span>▶</span><strong>Aquí se colocará tu video de HeyGen</strong><small>Explicación del proceso de remate bancario</small></div></section>
+
+    <section class="advisor" id="asesor-virtual"><div class="advisor-intro"><span class="eyebrow">Atención inmediata</span><h2>Habla con nuestro asesor virtual</h2><p>Primero resuelve tus dudas directamente con el avatar. Si necesitas información adicional o ya estás interesado en una propiedad, podrás agendar una cita con un asesor real.</p></div><div class="advisor-panel"><div class="avatar-side"><div class="avatar-circle"><span>AV</span><i></i></div><strong>Asesor virtual BUSVA</strong><small>Selecciona una pregunta</small></div><div class="chat-side"><div class="chat-answer"><span>Asesor virtual</span><p id="faq-answer"></p></div><div class="faq-buttons" id="faq-buttons"></div><a href="#cita" class="chat-cta">Agendar cita con un asesor real</a></div></div></section>
+
+    <section class="appointment" id="cita"><div class="appointment-copy"><span class="eyebrow">Atención personalizada</span><h2>Agenda una cita informativa</h2><p>Elige una reunión por Zoom o una cita presencial. La solicitud se enviará por WhatsApp para que un asesor confirme la disponibilidad.</p><ul><li>Sin compromiso</li><li>Atención con un asesor real</li><li>Confirmación directa por WhatsApp</li></ul></div><form class="appointment-form" id="appointment"><label>Nombre completo<input required id="name" placeholder="Escribe tu nombre"></label><label>Modalidad o lugar<select id="mode"><option>Zoom</option><option>Oficina Guadalajara</option><option>Oficina CDMX · Xoco</option><option>Oficina CDMX · Insurgentes Sur</option></select></label><div class="form-row"><label>Fecha preferida<input required type="date" id="date"></label><label>Horario preferido<select required id="time"><option value="">Selecciona</option><option>10:00 a.m.</option><option>12:00 p.m.</option><option>4:00 p.m.</option><option>6:00 p.m.</option></select></label></div><button>Solicitar cita por WhatsApp</button><small>También puedes llamar al <a href="tel:+523343340062">334 334 0062</a>.</small></form></section>
+
+    <section class="offices" id="oficinas"><div class="section-heading"><div><span class="eyebrow">Atención presencial</span><h2>Nuestras oficinas</h2></div><p>También puedes solicitar una cita por Zoom.</p></div><div class="office-grid"><article><span>Guadalajara</span><h3>Mariano Otero 3429</h3><p>Verde Valle, piso 5, Guadalajara, Jalisco.</p><a href="https://wa.me/523343340062?text=Hola,%20deseo%20agendar%20una%20cita%20en%20Guadalajara." target="_blank">Agendar en esta oficina</a></article><article><span>CDMX · Xoco</span><h3>Real de Mayorazgo 130</h3><p>Piso 8, despachos 147 y 132, colonia Xoco, Benito Juárez, CDMX.</p><a href="https://wa.me/523343340062?text=Hola,%20deseo%20agendar%20una%20cita%20en%20Xoco." target="_blank">Agendar en esta oficina</a></article><article><span>CDMX · Del Valle Sur</span><h3>Av. Insurgentes Sur 1079</h3><p>Piso 5, oficina 101, colonia Del Valle Sur, Benito Juárez, CDMX.</p><a href="https://wa.me/523343340062?text=Hola,%20deseo%20agendar%20una%20cita%20en%20Insurgentes%20Sur." target="_blank">Agendar en esta oficina</a></article></div></section>
+  </main>
+
+  <footer><div class="brand"><span><strong>BUSVA</strong><small>HOMEBROKERS</small></span></div><p>Catálogo informativo de oportunidades inmobiliarias.</p><a href="https://wa.me/523343340062" target="_blank">WhatsApp: 334 334 0062</a></footer>
+  <div class="modal-backdrop" id="modal" hidden><section class="property-modal" role="dialog" aria-modal="true"><button class="modal-close" id="modal-close">×</button><div class="modal-gallery"><div class="gallery-main" id="gallery-main"></div><div class="gallery-thumbs" id="gallery-thumbs"></div></div><div class="modal-content" id="modal-content"></div></section></div>
+
+  <script src="propiedades.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

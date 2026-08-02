@@ -1,0 +1,13 @@
+CATÁLOGO BUSVA HOMEBROKERS
+
+1. Extrae toda la carpeta del archivo ZIP.
+2. Abre index.html para ver la página.
+3. Para editarla puedes usar Visual Studio Code.
+
+ARCHIVOS
+- index.html: textos y secciones de la página.
+- estilos.css: colores, tamaños y diseño responsive.
+- app.js: filtros, galerías, modo claro/oscuro y formularios.
+- propiedades.js: las 520 propiedades con sus datos y fotografías.
+
+No cambies los nombres de los archivos ni los separes en carpetas diferentes.
